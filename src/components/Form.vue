@@ -100,7 +100,8 @@ import { Component, Vue } from "vue-property-decorator";
 import Button from "@/components/Button.vue";
 import noUiSlider from "nouislider";
 import "nouislider/dist/nouislider.css";
-
+import VueMask from "v-mask";
+Vue.use(VueMask);
 @Component({
   components: {
     Button,

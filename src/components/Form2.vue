@@ -27,6 +27,8 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Button from "@/components/Button.vue";
+import VueMask from "v-mask";
+Vue.use(VueMask);
 @Component({
   components: {
     Button,
