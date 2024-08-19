@@ -100,6 +100,7 @@ body {
     flex-direction: column;
     gap: 10px;
     & input {
+      border-radius: 0;
       width: 100%;
       border-bottom: 1px solid #818396;
       padding-bottom: 5px;
