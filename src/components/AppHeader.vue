@@ -1,26 +1,40 @@
 <template>
   <header :class="{ header: true, scroll: isScrolled }">
     <div class="header__container">
-      <a href="#" class="header__logo">
+      <a href="/" class="header__logo">
         <img src="@/assets/images/main/logo.png" alt="" />
       </a>
       <nav :class="{ menu: true, active: burger }">
         <ul class="menu__list">
           <li class="menu__item">
-            <a @click="toggleBurger" href="#cost" class="menu__link"> Цены </a>
+            <a @click.prevent="handleClick('cost')" href="/" class="menu__link">
+              Цены
+            </a>
           </li>
           <li class="menu__item">
-            <a @click="toggleBurger" href="#projects" class="menu__link">
+            <a
+              @click.prevent="handleClick('projects')"
+              href="/"
+              class="menu__link"
+            >
               Проекты
             </a>
           </li>
           <li class="menu__item">
-            <a @click="toggleBurger" href="#aboutcompany" class="menu__link">
+            <a
+              @click.prevent="handleClick('aboutcompany')"
+              href="/"
+              class="menu__link"
+            >
               О нас
             </a>
           </li>
           <li class="menu__item">
-            <a @click="toggleBurger" href="#contacts" class="menu__link">
+            <a
+              @click.prevent="handleClick('contacts')"
+              href="/"
+              class="menu__link"
+            >
               Контакты
             </a>
           </li>
@@ -343,6 +357,16 @@ import { mapActions } from "vuex";
 })
 export default class AppHeader extends Vue {
   isScrolled = false;
+  handleClick(anchorId: string) {
+    this.scrollToAnchor(anchorId);
+    this.toggleBurger();
+  }
+  scrollToAnchor(anchorId: string) {
+    const element = document.getElementById(anchorId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
