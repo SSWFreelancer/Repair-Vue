@@ -13,7 +13,12 @@
     </div>
     <div class="form__input">
       <p class="form__overtitle">Ваш телефон:</p>
-      <input type="tel" placeholder="+7 (999) 999-99-99" v-model="popupPhone" />
+      <input
+        type="tel"
+        placeholder="+998 (90) 999-99-99"
+        v-model="popupPhone"
+        v-mask="'+998 (##) ###-##-##'"
+      />
     </div>
     <button class="button">Получить расчет</button>
   </form>

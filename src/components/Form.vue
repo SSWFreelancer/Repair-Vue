@@ -84,7 +84,12 @@
     </div>
     <div class="form__input">
       <p class="form__overtitle">Ваш телефон:</p>
-      <input type="tel" v-model="tel" placeholder="+7 (999) 999-99-99" />
+      <input
+        type="tel"
+        v-model="tel"
+        placeholder="+998 (90) 999-99-99"
+        v-mask="'+998 (##) ###-##-##'"
+      />
     </div>
     <Button>Получить расчет</Button>
   </form>
@@ -95,6 +100,7 @@ import { Component, Vue } from "vue-property-decorator";
 import Button from "@/components/Button.vue";
 import noUiSlider from "nouislider";
 import "nouislider/dist/nouislider.css";
+
 @Component({
   components: {
     Button,
