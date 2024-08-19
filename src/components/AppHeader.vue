@@ -33,10 +33,8 @@
           <span>+7 (347) 123-45-67</span>
           <img src="@/assets/images/main/call.svg" alt="" />
         </a>
-        <a href="#" class="header__call" @click="openPopup">
-          Заказать звонок
-        </a>
-        <a href="#" class="header__time"> Ежедневно 08:00-22:00 </a>
+        <button class="header__call" @click="openPopup">Заказать звонок</button>
+        <div class="header__time">Ежедневно 08:00-22:00</div>
       </div>
       <div
         @click="toggleBurger"
@@ -159,6 +157,7 @@
     }
   }
   &__call {
+    background: none;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -179,7 +178,6 @@
   &__time {
     font-size: 14px;
     line-height: calc(17 / 14);
-    color: #818396;
     @media (max-width: 810px) {
       display: none;
     }
