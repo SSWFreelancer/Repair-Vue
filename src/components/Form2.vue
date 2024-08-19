@@ -14,6 +14,7 @@
     <div class="form__input">
       <p class="form__overtitle">Ваш телефон:</p>
       <input
+        required
         type="tel"
         placeholder="+998 (90) 999-99-99"
         v-model="popupPhone"
