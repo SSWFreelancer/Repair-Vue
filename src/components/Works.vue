@@ -61,7 +61,7 @@ import Title from "@/components/Title.vue";
 export default class Works extends Vue {}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "@/assets/scss/variables.scss";
 .easy {
   &__title {

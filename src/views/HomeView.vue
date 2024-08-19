@@ -9,6 +9,13 @@
       <Works />
       <OurWorks />
     </div>
+    <OtherServices />
+    <EconomyWays />
+    <div id="aboutcompany" class="block">
+      <AboutUs />
+      <Masters />
+    </div>
+    <Discount />
   </div>
 </template>
 
@@ -21,6 +28,11 @@ import Services from "@/components/Services.vue";
 import Control from "@/components/Control.vue";
 import Works from "@/components/Works.vue";
 import OurWorks from "@/components/OurWorks.vue";
+import OtherServices from "@/components/OtherServices.vue";
+import EconomyWays from "@/components/EconomyWays.vue";
+import AboutUs from "@/components/AboutUs.vue";
+import Masters from "@/components/Masters.vue";
+import Discount from "@/components/Discount.vue";
 @Component({
   components: {
     Main,
@@ -30,6 +42,11 @@ import OurWorks from "@/components/OurWorks.vue";
     Control,
     Works,
     OurWorks,
+    OtherServices,
+    EconomyWays,
+    AboutUs,
+    Masters,
+    Discount,
   },
 })
 export default class HomeView extends Vue {}
