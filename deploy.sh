@@ -20,10 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git remote add origin git@github.com:SSWFreelancer/repair-vue.git
-git branch -M main
-git push -f origin main:gh-pages
-
-# git push -f git@github.com:sswfreelancer/repair-vue.git main:gh-pages
+git push -f git@github.com:sswfreelancer/repair-vue.git main:gh-pages
 
 cd -
