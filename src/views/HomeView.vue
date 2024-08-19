@@ -16,6 +16,7 @@
       <Masters />
     </div>
     <Discount />
+    <Questions />
   </div>
 </template>
 
@@ -33,6 +34,7 @@ import EconomyWays from "@/components/EconomyWays.vue";
 import AboutUs from "@/components/AboutUs.vue";
 import Masters from "@/components/Masters.vue";
 import Discount from "@/components/Discount.vue";
+import Questions from "@/components/Questions.vue";
 @Component({
   components: {
     Main,
@@ -47,6 +49,7 @@ import Discount from "@/components/Discount.vue";
     AboutUs,
     Masters,
     Discount,
+    Questions,
   },
 })
 export default class HomeView extends Vue {}

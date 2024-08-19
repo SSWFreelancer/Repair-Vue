@@ -52,7 +52,7 @@ export default class Discount extends Vue {}
     & span {
       color: $secondary;
     }
-    text-align: left !important;
+    text-align: left;
     @media (max-width: 991px) {
       text-align: center;
     }
