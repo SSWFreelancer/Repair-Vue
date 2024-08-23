@@ -1,7 +1,7 @@
 <template>
   <header :class="{ header: true, scroll: isScrolled }">
     <div class="header__container">
-      <a href="/" class="header__logo">
+      <a href="#" class="header__logo">
         <img src="@/assets/images/main/logo.png" alt="" />
       </a>
       <nav :class="{ menu: true, active: burger }">
